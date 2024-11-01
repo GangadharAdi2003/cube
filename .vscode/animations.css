@@ -1,0 +1,66 @@
+#animation{
+    position:relative;
+    width: 140px;
+    height: 140px;
+    background-color: aqua;
+    left:15%;
+    top:30%;
+    transform: rotatex(98deg);
+   transform: scale(20,0.3);
+   transform: translate(150px);
+    transition:2s ease-in-out;
+   animation: shapeChange 2s ease-in-out  16 alternate;
+   
+}
+
+    @keyframes shapeChange{
+    0%{
+        transform: rotate(0deg) scale(1,1);
+        border-radius: 0%;
+        background-color: aqua;
+        
+    }
+    25%{
+        transform: rotate(90deg) scale(0.82,0.82); 
+        border-radius: 12.5%;
+        background-color: rgb(51, 41, 195);
+    }
+    50%{
+        transform: rotate(180px) scale(0.67,0.67); 
+        border-radius: 25%;
+        background-color: rgb(12, 184, 98);
+    }
+    100%{
+        transform: rotate(360deg) scale(0.5,0.5); 
+        border-radius: 50%;
+        background-color: rgb(211, 121, 18);
+    }
+}
+#nam{
+    
+    border:2px solid rgb(116, 13, 234);
+    width: 150px;
+    padding: 15px;
+    margin: 50px;
+    animation: nameChange  2s ease-in-out 2ms 10 alternate ;
+    
+   
+}
+@keyframes nameChange {
+   from{
+    color: brown ;
+    
+   
+   }
+   to{
+    color: rgb(8, 12, 143) ;
+    position: absolute;
+    
+    top:0;
+    left:0;
+   
+    
+   }
+
+} 
+
